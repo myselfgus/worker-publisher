@@ -4,11 +4,32 @@
 	"main": "./src/index.ts",
 	"compatibility_date": "2025-10-08",
 	"upload_source_maps": true,
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "meta-mcp-db",
+			"database_id": "8dc4c0f5-7f82-4ed2-8501-be0b95a4fa38"
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "KV",
+			"id": "a1afcfa24f9a4cd2a135117098493a49"
+		}
+	],
 	"dispatch_namespaces": [
 		{
 			"binding": "DISPATCHER",
-			"namespace": "my-dispatch-namespace",
-			"experimental_remote": true
+			"namespace": "meta-mcp",
+			"outbound": {
+				"service": "meta-mcp"
+			}
+		}
+	],
+	"services": [
+		{
+			"binding": "MCP_CLIENT",
+			"service": "mcp-client"
 		}
 	],
 	"observability": {
