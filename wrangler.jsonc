@@ -29,7 +29,9 @@
 	"services": [
 		{
 			"binding": "MCP_CLIENT",
-			"service": "mcp-client"
+			"service": "mcp-client",
+			"environment": "production",
+			"entrypoint": "MCPClientRPC"
 		}
 	],
 	"observability": {
