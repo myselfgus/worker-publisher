@@ -1,4 +1,8 @@
 import Cloudflare from "cloudflare";
+import { WorkerPublisherRPC } from "./rpc";
+
+// Export RPC class for service bindings
+export { WorkerPublisherRPC };
 
 // Deploy function (copied from deploy-wfp.ts)
 async function deploySnippetToNamespace(

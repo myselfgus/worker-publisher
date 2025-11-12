@@ -30,6 +30,7 @@
 		"wrangler": "^4.29.1"
 	},
 	"dependencies": {
-		"cloudflare": "^4.5.0"
+		"cloudflare": "^4.5.0",
+		"nanoid": "^5.1.6"
 	}
 }
